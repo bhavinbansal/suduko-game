@@ -1,0 +1,397 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    /* color: darkorange; */
+  }
+  #number_container {
+    /* we dont wont to display the numbers */
+    display: none;
+    /* font-family: "Open Sans", sans-serif; */
+  }
+  /* created by JavaScript  */
+  body.dark {
+    background-color: #333;
+    color: white;
+    /* color: white; */
+  }
+  header {
+    background-size: cover;
+    background: blur;
+    width: 100vw;
+    /* in this we align elements to the center */
+    text-align: center;
+    /* centres the text */
+    padding-bottom: 10px;
+    padding: 0;
+    z-index: 5;
+  }
+  label {
+    font-size: 3vmin;
+    transition: all 0.3ms ease-in-out;
+  }
+  h1 {
+    font-size: 45pt;
+    /* color: black; */
+    padding: 1px;
+    border-radius: 15px;
+    /* width: fit-content;  */
+    margin-bottom: 4px;
+    margin-top: 2px;
+    /* text-align: center;
+      align-items: center;
+      justify-content: center;
+      display: flex; */
+  }
+  
+  .div1 {
+    /* we will make a div and then trigger flex and make a center  */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  #setupgame {
+    /* id of the theme and difficulty and time */
+    display: flex;
+    justify-content: center;
+    /* centres all the elements that is inside the setup game */
+  }
+  #setupgame > * {
+    /* this gives this properties to every element i.e the child of this id */
+    /* >* +* <* */
+    /* it shows that it is a direct children of setup game and it woudnlt allow to make it up  */
+  
+    margin-top: 2px;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    /* align items inside the flexbox vertically and margin auto for aligning all over the page rather than flexbox */
+  }
+  h3 {
+    font-size: 30px;
+    display: flex;
+    flex-wrap: center;
+    justify-content: center;
+    /* color:  black; */
+    border-radius: 10px;
+  }
+  #choosed {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  button {
+    cursor: pointer;
+    justify-items: center;
+    font-size: 2vmin;
+    height: 4vh;
+    width: 11vw;
+    border-radius: 0.5vmin;
+    background-color: rgb(2, 255, 179);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  p#timer {
+    /* aise likha h paragraph m lines h */
+    font-size: 25px;
+    border-radius: 3px;
+    font-weight: bold;
+    text-align: center;
+    margin: 7px;
+  }
+  p#lives {
+    /* aise likha h paragraph m lines h */
+    font-size: 25px;
+    border-radius: 3px;
+    font-weight: bold;
+    text-align: center;
+    margin: 7px;
+  }
+  #game {
+    display: flex;
+    /* helps deploy flexbox */
+    justify-content: center;
+  }
+  #number_container {
+    /* margin-top: 2px; */
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #number_container > * {
+    /* applying for every child */
+    /* this holds every number singly */
+    border: 1px solid;
+    border-radius: 15px;
+    width: 45px;
+    height: 45px;
+    font-size: 4vmin;
+    margin-left: 20px;
+    margin-right: 2px;
+    margin-top: 20px;
+    margin-bottom: 1px;
+    text-align: center;
+  }
+  #board {
+    /* background-color: blueviolet; */
+    padding-top: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    /* content is kind of margin in self is padding and items is text align */
+    align-content: center;
+    width: 600px;
+    height: 600px;
+  }
+  .tile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin: 0px;
+    /* vertical-align: middle; */
+    font-size: 5vmin;
+  }
+  p.selected {
+    background-color: grey;
+  }
+  p.incorrect {
+    color: red;
+  }
+  .rightborder {
+    border-right: 5px solid black;
+  }
+  .bottomborder {
+    border-bottom: 5px solid black;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vmin;
+    /* background-color: #333; */
+    /* text-align: center; */
+    margin: 10px;
+  }
+  button:hover {
+    transform: scale(1.2);
+  }
+  /* .github{
+      color: rgb(13, 245, 83);
+  } */
+  @media (min-height: 340px) and (max-width: 640px) {
+    * {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      /* color: darkorange; */
+    }
+    header {
+      /* in this we align elements to the center */
+      text-align: center;
+      /* centres the text */
+      padding-bottom: 2px;
+      /* border-bottom: 1px solid red; */
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 4vmin;
+      /* color: black; */
+      padding: 0px;
+      /* background-color: grey; */
+      border-radius: 5px;
+      /* width: fit-content;  */
+      margin-bottom: 2px;
+      margin-top: 0px;
+      /* text-align: center;
+          align-items: center;
+          justify-content: center;
+          display: flex; */
+    }
+    #socialhandles {
+      width: 6vw;
+      height: 4vh;
+      margin: 0.4vmin;
+    }
+    .div1 {
+      /* we will make a div and then trigger flex and make a center  */
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+    }
+    #setupgame {
+      /* id of the theme and difficulty and time */
+      display: flex;
+      justify-content: center;
+      /* centres all the elements that is inside the setup game */
+    }
+    #setupgame > * {
+      /* this gives this properties to every element i.e the child of this id */
+      /* >* +* <* */
+      /* it shows that it is a direct children of setup game and it woudnlt allow to make it up  */
+      font-size: 10px;
+      margin-top: 1px;
+      padding-left: 10px;
+      padding-right: 10px;
+      align-items: center;
+      /* align items inside the flexbox vertically and margin auto for aligning all over the page rather than flexbox */
+    }
+    h3 {
+      font-size: 10px;
+      display: flex;
+      flex-wrap: center;
+      justify-content: center;
+      /* background-color: teal; */
+      /* color:  black; */
+      border-radius: 5px;
+    }
+    #choosed,#chooset,#chooseth{
+        font-size:3vmin;
+    }
+    #choosed > * {
+      display: flex;
+      flex-direction: column;
+      font-size: 3vmin;
+    }
+    #chooset > * {
+      display: flex;
+      flex-direction: column;
+      font-size: 3vmin;
+    }
+    #chooseth > * {
+      display: flex;
+      flex-direction: column;
+      font-size: 3vmin;
+    }
+    button#start-button1 {
+       padding: 1vmin; 
+      cursor: pointer;
+      justify-items: center;
+      font-size: 1.5vmin;
+      height: 4vh;
+      width: 17vw;
+      border-radius: 0.5vmin;
+      background-color: rgb(2, 255, 179);
+      transition: all 0.3s ease-in-out;
+    }
+    p#timer {
+      /* aise likha h paragraph m lines h */
+      font-size: 9px;
+      border-radius: 3px;
+      font-weight: bold;
+      text-align: center;
+      margin: 4px;
+    }
+    p#lives {
+      /* aise likha h paragraph m lines h */
+      font-size: 9px;
+      border-radius: 3px;
+      font-weight: bold;
+      text-align: center;
+      margin: 4px;
+      margin-bottom: 4px;
+    }
+    #game {
+      display: flex;
+      /* helps deploy flexbox */
+      justify-content: center;
+    }
+    #number_container {
+      justify-content: center;
+      /* align-items: center; */
+      flex-wrap: wrap;
+      flex-direction: column;
+      /* we can arrange them in column */
+    }
+    #number_container > * {
+      /* applying for every child */
+      /* this holds every number singly */
+      border: 1px solid black;
+      border-radius: 4px;
+      width: 30px;
+      height: 30px;
+      font-size: 20pt;
+      margin-left: 5px;
+      margin-right: 1px;
+      margin-top: 1px;
+      margin-bottom: 1px;
+      text-align: center;
+    }
+    #board {
+      padding-top: 2px;
+      margin-top: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      /* content is kind of margin in self is padding and items is text align */
+      align-content: center;
+      width: 300px;
+      height: 300px;
+      margin-bottom: 4px;
+    }
+    .tile {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      border: 1px solid black;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      margin: 0px;
+      padding-top: 2px;
+      vertical-align: middle;
+      font-size: 21px;
+    }
+    p.selected {
+      background-color: grey;
+    }
+    p.incorrect {
+      color: red;
+    }
+    .rightborder {
+      border-right: 2px solid black;
+    }
+    .bottomborder {
+      border-bottom: 2px solid black;
+    }
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background-color: gray; */
+      text-align: center;
+      margin-top: 30px;
+      /* height: 25px; */
+      vertical-align: middle;
+      /* color: black; */
+    }
+    #linkedinlog {
+      height: 50px;
+    }
+    #linkedin {
+      margin-bottom: 3px;
+      font-size: 5px;
+    }
+    #github {
+      margin-bottom: 3px;
+      font-size: 5px;
+    }
+    #choosed > * {
+      display: flex;
+      flex-direction: column;
+      font-size: 5px;
+    }
+    #chooset > * {
+      font-size: 5px;
+      display: flex;
+      flex-direction: column;
+    }
+    #chooseth > * {
+      display: flex;
+      flex-direction: column;
+      font-size: 5px;
+    }
+  }
+  
