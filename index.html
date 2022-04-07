@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sudoku Solver</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/fevicon.jpg">
+        <link rel="stylesheet" href="css/style.css">
+        <script class="sudoku.js" src="js/script.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<header>
+    <div class="div1">
+        <h1>Sudoku Solver</h1>
+    </div>
+    <div id="setupgame">
+        <!-- parent class id  -->
+        <div id="diff">
+            <!-- difficulty level -->
+            <h3 id="choosed">Choose Difficulty: </h3>
+            <label for="easy1">Easy:</label><input id="easy1" type="radio" name="diff"> 
+            <label for="medium1">Medium:</label><input id="medium1" type="radio" name="diff"> 
+            <label for="hard1">Hard:</label><input id="hard1" type="radio" name="diff">
+        </div>
+        <div id="time">
+            <!-- for the time  -->
+            <h3 id="chooset">Choose Time: </h3>
+            <label for="timing">3 min:</label><input id="timing" type="radio" name=timee> 
+            <label for="timing1">10 min:</label><input id="timing1" type="radio" name=timee> 
+            <label for="timing2">15 min:</label><input id="timing2"type="radio" name=timee>
+        </div>
+        <div id="theme">
+            <!-- theme  -->
+            <h3 id="chooseth">Theme: </h3>
+            <label for="dark1">Dark:</label><input id="dark1" type="radio" name="theme">
+            <label for="light1">Light:</label><input id="light1"type="radio" name="theme">
+        </div>
+    </div>
+
+    <br>
+
+        <button id="start-button1"><a id="btns">Create a New Game</a></button>
+</header>
+<body>
+    <div class="body">
+        <div id="stats">
+            <!-- class of stats -->
+            <p id="timer"></p>
+            <!-- in this the timer we will add -->
+            <p id="lives"></p>
+            <!-- the number of lives remaining -->
+        </div>
+        <div id="game">
+            <!-- this id is containing all the element inside the game id -->
+            <div id="board"></div>
+            <!-- this gonna contain all the childs on the board  -->
+            <div id="number_container" class="hidden">
+                <!-- this is a container to hold all the numbers that are gonna go inside the board -->
+                <p id="two">2</p>
+                <p id="three">3</p>
+                <p id="four">4</p>
+                <p id="five">5</p>
+                <p id="one">1</p>
+                <p id="six">6</p>
+                <p id="seven">7</p>
+                <p id="eight">8</p>
+                <p id="nine">9</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer id="footer1">
+    Made by Bhavin Bansal
+    <!-- <button id="github"><a id="github" href="https://github.com/bhavinbansal" target="_blank">Github</a></button> -->
+    <!-- <button id="linkedin"><a id="linkedin" href="https://www.linkedin.com/in/bhavinbansal7865/" target="blank"><i id="linkedinlogoz" class="fab fa-linkedin-in "></i></button> -->
+    <a id="socialhandles" href="https://github.com/bhavinbansal" ><img id="socialhandles" src="img/github.png" alt="github" width="35vw" height="35vh" style="margin: 1vmin; display:flex; align-self: center;" target="_blank"></a>   
+    <a id="socialhandles" href="https://www.linkedin.com/in/bhavinbansal7865/"><img id="socialhandles" src="img/linkedin.png" alt="linkedin" width="35vw" height="39vh" style=" display:flex; margin: 1vmin; align-self: center" target="_blank"></a>
+</footer>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
